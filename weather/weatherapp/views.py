@@ -14,7 +14,7 @@ def home(request):
     url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid=d7acbcb66932dc3d8283eeb0fcbfc08e'
     PARAMS = {'units':'metric'}
 
-    API_KEY =  'AIzaSyBdDZL8yVJ6sYDKoIL6X-qoQQNrregm1p8'
+    API_KEY =  ''
 
     SEARCH_ENGINE_ID = 'd509abadbc8d748f7'
      
@@ -54,4 +54,5 @@ def home(request):
           return render(request,'we.html' ,{'description':'clear sky', 'icon':'01d'  ,'temp':25 , 'day':day , 'city':'indore' , 'exception_occurred':exception_occurred } )
                
     
+
     
